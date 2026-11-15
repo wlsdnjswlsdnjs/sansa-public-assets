@@ -1,0 +1,1241 @@
+{
+  "edition": "Sansa — contemplative timber hall",
+  "assets": [
+    {
+      "file": "monk.glb",
+      "source": "tools/character/build_chibi.py",
+      "description": "Original chibi novice monk, skinned continuous robe, mitten hands, facial curves and pose correctives",
+      "license": "Project-authored",
+      "bytes": 1288188,
+      "sha256": "0dc4e7a1d22bec895e3f64b1b324292d82c4363a8cbbd2147f75b75e6929a2b1",
+      "modifications": [
+        "Pose-aware simplification of body meshes; original painted head, skin weights, skeleton, morph deltas and embedded textures preserved",
+        "194434 triangles; Meshopt 0.22 encoding; reproducible with tools/character/optimize.mjs"
+      ]
+    },
+    {
+      "file": "monk-remote-lod.glb",
+      "source": "tools/character/optimize.mjs --remote-lod (input public/assets/monk.glb)",
+      "description": "Distance detail model for real remote visitors; original novice monk appearance and motions retained",
+      "license": "Project-authored",
+      "bytes": 222548,
+      "sha256": "31fa64fc4471e1ee3ba07dd026d42ccb68c15f4b357627aea7000b8ab907553d",
+      "modifications": [
+        "Original released monk reduced for distant real visitors; retained rig, skin weights, cloth morphs, materials and embedded textures preserved",
+        "22618 triangles; Meshopt 0.22 encoding; self and permanent NPCs retain original model"
+      ],
+      "reproduction": "tools/character/REMOTE_LOD.md"
+    },
+    {
+      "file": "models/buddha.glb",
+      "title": "금동불좌상 (아미타불 추정)",
+      "collection": "국립중앙박물관 덕수2116",
+      "provider": "국립중앙박물관 / National Museum of Korea",
+      "source": "https://www.museum.go.kr/MUSEUM/contents/M0505000000.do?relicId=1116&schM=view&searchId=search",
+      "license": "KOGL Type 1 (공공누리 제1유형: 출처표시)",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "attribution": "국립중앙박물관, 금동불좌상·금동보살입상(덕수2116), 공공누리 제1유형. 원본 3D 스캔 중 좌불만 분리하고 웹용 크기·텍스처·압축을 조정했습니다.",
+      "manifest": "models/buddha-manifest.json",
+      "reproduction": "tools/buddha/README.md",
+      "description": "Official 3D scan of a Korean Goryeo gilt-bronze seated Buddha, identified by the museum as probably Amitabha. Original scan topology and UVs retained.",
+      "modifications": [
+        "Original scan mesh topology and UVs retained",
+        "Standing companion not included",
+        "Normalized to 1 metre tall with base at zero",
+        "Original 8K albedo and tangent normal downsampled to 4K JPEG intermediate and 2K final textures",
+        "PBR gilded-bronze material; Meshopt compression applied separately"
+      ],
+      "bytes": 1516016,
+      "sha256": "4ca8555700b3bf0a9db50bdb156ffb689478f315df3dc0a5db8f9f2afafb4a07"
+    },
+    {
+      "file": "models/pine.glb",
+      "title": "Pine Sapling Small",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/pine_sapling_small",
+      "authors": {
+        "Rob Tuytel": "photography",
+        "Rico Cilliers": "modeling"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "description": "Photogrammetry pine sapling reused around the timber hall.",
+      "modifications": [
+        "Optimized self-contained GLB from the Poly Haven 1K glTF source",
+        "Repeated at different scales; static instances batched by material at runtime"
+      ],
+      "bytes": 4893776,
+      "sha256": "e1a1a47554e713569b5135bcc97e3e55ec7b9f68d29bd4d4331ccfe29d650715"
+    },
+    {
+      "file": "altar-devotion.jpg",
+      "title": "Altar devotional mural",
+      "source": "User-provided AI-generated PNG artwork",
+      "license": "User-provided for use in this project",
+      "description": "The user supplied this AI-generated Buddhist devotional image for the altar wall.",
+      "modifications": [
+        "Converted the supplied PNG to a web JPEG"
+      ],
+      "bytes": 1290114,
+      "sha256": "2c344920105b7a3a2f795c9d03b963a940cc412f11c51490086b5b093aa85b5e"
+    },
+    {
+      "file": "materials/floor/color.jpg",
+      "title": "Old Wooden Floor 02 — color",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/old_wooden_floor_02",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/old_wooden_floor_02/old_wooden_floor_02_diff_2k.jpg",
+      "source_md5": "67d884bf7bd011fac3bb711db9f1baa3",
+      "authors": {
+        "Charlotte Baglioni": "Scanning",
+        "Jenelle van Heerden": "Processing"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "resolution": "2k",
+      "map": "color",
+      "modifications": [
+        "Re-encoded as a web JPEG; original tiling texture retained",
+        "Colour tint, UV repeat and normal strength adjusted by the hall materials at runtime"
+      ],
+      "bytes": 1731722,
+      "sha256": "ab0a821c2de94230040c9a70f2e48ff8fefa0ded68f55fa9865cf3027798a0ff"
+    },
+    {
+      "file": "materials/floor/normal.jpg",
+      "title": "Old Wooden Floor 02 — normal",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/old_wooden_floor_02",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/old_wooden_floor_02/old_wooden_floor_02_nor_gl_2k.jpg",
+      "source_md5": "145e5193a9e3945d959fa101bbbb4c9b",
+      "authors": {
+        "Charlotte Baglioni": "Scanning",
+        "Jenelle van Heerden": "Processing"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "resolution": "2k",
+      "map": "normal",
+      "modifications": [
+        "Re-encoded as a web JPEG; original tiling texture retained",
+        "Colour tint, UV repeat and normal strength adjusted by the hall materials at runtime"
+      ],
+      "bytes": 936642,
+      "sha256": "f787edb5282c2d2b491f6e733a203ea36fa6f5e73faada93221155e590293405"
+    },
+    {
+      "file": "materials/floor/roughness.jpg",
+      "title": "Old Wooden Floor 02 — roughness",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/old_wooden_floor_02",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/old_wooden_floor_02/old_wooden_floor_02_rough_2k.jpg",
+      "source_md5": "6feeaa79b245928f53ac54133e0ef562",
+      "authors": {
+        "Charlotte Baglioni": "Scanning",
+        "Jenelle van Heerden": "Processing"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "resolution": "2k",
+      "map": "roughness",
+      "modifications": [
+        "Re-encoded as a web JPEG; original tiling texture retained",
+        "Colour tint, UV repeat and normal strength adjusted by the hall materials at runtime"
+      ],
+      "bytes": 354083,
+      "sha256": "549fa1d31ab328b94309d27ff18d85bc40a950ad1888c8e3bb7d21384490a121"
+    },
+    {
+      "file": "materials/wood/color.jpg",
+      "title": "Dark Wood — color",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/dark_wood",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dark_wood/dark_wood_diff_1k.jpg",
+      "source_md5": "47fa883f1bb33acc5711245f64b75975",
+      "authors": {
+        "Dario Barresi": "Baking",
+        "Dimitrios Savva": "Photography",
+        "Rico Cilliers": "Tiling"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "resolution": "1k",
+      "map": "color",
+      "modifications": [
+        "Re-encoded as a web JPEG; original tiling texture retained",
+        "Colour tint, UV repeat and normal strength adjusted by the hall materials at runtime"
+      ],
+      "bytes": 351663,
+      "sha256": "88d480c99fe1844be3ae081287085bd127989730cc68c4c874cc358cc62189d3"
+    },
+    {
+      "file": "materials/wood/normal.jpg",
+      "title": "Dark Wood — normal",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/dark_wood",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dark_wood/dark_wood_nor_gl_1k.jpg",
+      "source_md5": "ca74ffa4c1b7ff5afe7316bbfa87f9a0",
+      "authors": {
+        "Dario Barresi": "Baking",
+        "Dimitrios Savva": "Photography",
+        "Rico Cilliers": "Tiling"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "resolution": "1k",
+      "map": "normal",
+      "modifications": [
+        "Re-encoded as a web JPEG; original tiling texture retained",
+        "Colour tint, UV repeat and normal strength adjusted by the hall materials at runtime"
+      ],
+      "bytes": 100419,
+      "sha256": "010131d6e170d13c5e1d01b618cf75b4c6105e1c4418ccec3927b16b494e9800"
+    },
+    {
+      "file": "materials/wood/roughness.jpg",
+      "title": "Dark Wood — roughness",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/dark_wood",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dark_wood/dark_wood_rough_1k.jpg",
+      "source_md5": "b1acb7bf90785d3945a85eca408dbc6c",
+      "authors": {
+        "Dario Barresi": "Baking",
+        "Dimitrios Savva": "Photography",
+        "Rico Cilliers": "Tiling"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "resolution": "1k",
+      "map": "roughness",
+      "modifications": [
+        "Re-encoded as a web JPEG; original tiling texture retained",
+        "Colour tint, UV repeat and normal strength adjusted by the hall materials at runtime"
+      ],
+      "bytes": 223634,
+      "sha256": "a931e3a24eece0d12c906820aa4620ea72543c286e8d560f28fd07f745f94096"
+    },
+    {
+      "file": "materials/stone/color.jpg",
+      "title": "Granite Tile 04 — color",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/granite_tile_04",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/granite_tile_04/granite_tile_04_diff_4k.jpg",
+      "source_md5": "1e8b60c0dce9ba95c8b343d03c3b8bd9",
+      "source_bytes": 14966095,
+      "authors": {
+        "Amal Kumar": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "color",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recommended_repeat_m": [
+        0.68,
+        0.68
+      ],
+      "crop_uv": [
+        0.112,
+        0.22,
+        0.282,
+        0.39
+      ],
+      "modifications": [
+        "Crop source pixel rectangle (459, 901, 1155, 1597) to remove grout and overlap edges",
+        "Make a repeating 2x2 mirrored extraction; flip normal R on horizontal mirror and G on vertical mirror",
+        "JPEG quality 92, no chroma subsampling; source colour retained"
+      ],
+      "bytes": 527525,
+      "sha256": "ff60082ae5226c39c5c9d6cb25d215c1d2ea71efb5e283bc515434c4484c0c5c"
+    },
+    {
+      "file": "materials/stone/normal.jpg",
+      "title": "Granite Tile 04 — normal",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/granite_tile_04",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/granite_tile_04/granite_tile_04_nor_gl_4k.jpg",
+      "source_md5": "e46e41ec9eeccaf57b78a7fa3d18f8e2",
+      "source_bytes": 11453711,
+      "authors": {
+        "Amal Kumar": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "normal",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recommended_repeat_m": [
+        0.68,
+        0.68
+      ],
+      "crop_uv": [
+        0.112,
+        0.22,
+        0.282,
+        0.39
+      ],
+      "modifications": [
+        "Crop source pixel rectangle (459, 901, 1155, 1597) to remove grout and overlap edges",
+        "Make a repeating 2x2 mirrored extraction; flip normal R on horizontal mirror and G on vertical mirror",
+        "Retain OpenGL tangent normal convention and renormalize after resampling",
+        "JPEG quality 92, no chroma subsampling; source colour retained"
+      ],
+      "bytes": 309367,
+      "sha256": "285e62149efcb2c16051e7da35aed518997561cfb04a797cddca585fa407a689"
+    },
+    {
+      "file": "materials/stone/roughness.jpg",
+      "title": "Granite Tile 04 — roughness",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/granite_tile_04",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/granite_tile_04/granite_tile_04_rough_4k.jpg",
+      "source_md5": "149c74144e0b6d2cfd1071cf54fa2169",
+      "source_bytes": 13852774,
+      "authors": {
+        "Amal Kumar": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "roughness",
+      "dimensions": [
+        512,
+        512
+      ],
+      "recommended_repeat_m": [
+        0.68,
+        0.68
+      ],
+      "crop_uv": [
+        0.112,
+        0.22,
+        0.282,
+        0.39
+      ],
+      "modifications": [
+        "Crop source pixel rectangle (459, 901, 1155, 1597) to remove grout and overlap edges",
+        "Make a repeating 2x2 mirrored extraction; flip normal R on horizontal mirror and G on vertical mirror",
+        "Keep source roughness as one channel; JPEG quality 91"
+      ],
+      "bytes": 108416,
+      "sha256": "c4dc0f6489e21e4731029c7fee1883c5fd44de9ec571f7021d01de6dad5336b6"
+    },
+    {
+      "file": "environment/woodland.jpg",
+      "title": "Epping Forest 02 clearing panorama",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/epping_forest_02",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/epping_forest_02.jpg",
+      "source_md5": "38beaf9146ecc67bde90282cb6369f9e",
+      "source_sha256": "5f0da5095c1450fa46480af8dbb0da7626435267b583af26e289ba1e094e3636",
+      "source_dimensions": [
+        8192,
+        4096
+      ],
+      "authors": {
+        "Andreas Mischok": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "description": "Official tonemapped equirectangular woodland clearing panorama, with an open sky, distant tree line and no buildings.",
+      "modifications": [
+        "Use the official tonemapped JPG, without relighting or retouching",
+        "Lanczos resize from 8192x4096 to 4096x2048",
+        "RGB JPEG quality 84, no chroma subsampling, optimized encoding",
+        "Further Lanczos resize of the approved 4096x2048 JPG to 2048x1024; JPEG quality 88, 4:4:4, mozjpeg",
+        "No retouching or relighting; distant background only. Reproduce with tools/surfaces/optimize_panorama.mjs"
+      ],
+      "bytes": 799413,
+      "sha256": "b8ccb24932eda22009c7c68d683f2b365b705d5998803d1606952463170b5ed4",
+      "usage": "Distant panoramic background only; the interactive foreground remains fully three-dimensional. This image does not replace the reflection environment or alter the Buddha material."
+    },
+    {
+      "file": "materials/plaster/color.jpg",
+      "title": "White Plaster 02 — color",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/white_plaster_02",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_plaster_02/white_plaster_02_diff_1k.jpg",
+      "source_md5": "7b10c2686bcfd76d1f309a20fd06b57e",
+      "source_bytes": 527219,
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "color",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recommended_repeat_m": [
+        1,
+        1
+      ],
+      "crop_uv": null,
+      "modifications": [
+        "JPEG quality 92, no chroma subsampling; source colour retained"
+      ],
+      "bytes": 445803,
+      "sha256": "43d30d55955e492a4bfd4780f565b8cd34b3cc1790b5fecb889b02aa64505266"
+    },
+    {
+      "file": "materials/plaster/normal.jpg",
+      "title": "White Plaster 02 — normal",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/white_plaster_02",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_plaster_02/white_plaster_02_nor_gl_1k.jpg",
+      "source_md5": "55fc03203ebf1dc703a380fde93ff502",
+      "source_bytes": 652310,
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "normal",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recommended_repeat_m": [
+        1,
+        1
+      ],
+      "crop_uv": null,
+      "modifications": [
+        "Retain OpenGL tangent normal convention and renormalize after resampling",
+        "JPEG quality 92, no chroma subsampling; source colour retained"
+      ],
+      "bytes": 528798,
+      "sha256": "50378ea78aa6876bc75398a4c87b58d85196f99eb083cc18116628af9a35d968"
+    },
+    {
+      "file": "materials/plaster/roughness.jpg",
+      "title": "White Plaster 02 — roughness",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/white_plaster_02",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_plaster_02/white_plaster_02_rough_1k.jpg",
+      "source_md5": "8b28f263360b8c4ddbdc4f7c650c4eeb",
+      "source_bytes": 295900,
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "roughness",
+      "dimensions": [
+        512,
+        512
+      ],
+      "recommended_repeat_m": [
+        1,
+        1
+      ],
+      "crop_uv": null,
+      "modifications": [
+        "Keep source roughness as one channel; JPEG quality 91"
+      ],
+      "bytes": 37280,
+      "sha256": "b2511b533f9f358d1c0693e61f55a5ec85b029898468d79eb718c547d700ba15"
+    },
+    {
+      "file": "materials/roof/color.jpg",
+      "title": "Roof Slates 03 — color",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/roof_slates_03",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/roof_slates_03/roof_slates_03_diff_8k.jpg",
+      "source_md5": "e397dd8692c93c095bbc95c75d256f29",
+      "source_bytes": 16881150,
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "color",
+      "dimensions": [
+        1024,
+        512
+      ],
+      "recommended_repeat_m": [
+        0.234375,
+        0.158203
+      ],
+      "crop_uv": [
+        0.3125,
+        0.625,
+        0.3515625,
+        0.6513671875
+      ],
+      "modifications": [
+        "Crop source pixel rectangle (2560, 5120, 2880, 5336) to remove grout and overlap edges",
+        "Make a repeating 2x2 mirrored extraction; flip normal R on horizontal mirror and G on vertical mirror",
+        "JPEG quality 92, no chroma subsampling; source colour retained"
+      ],
+      "bytes": 33239,
+      "sha256": "3e8a43ff937425389f3812683be5e7389b951908bc6aa9b875f57e21ed349564"
+    },
+    {
+      "file": "materials/roof/normal.jpg",
+      "title": "Roof Slates 03 — normal",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/roof_slates_03",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/roof_slates_03/roof_slates_03_nor_gl_8k.jpg",
+      "source_md5": "9b06d67849170e6e10d5f195e0c68668",
+      "source_bytes": 27813709,
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "normal",
+      "dimensions": [
+        1024,
+        512
+      ],
+      "recommended_repeat_m": [
+        0.234375,
+        0.158203
+      ],
+      "crop_uv": [
+        0.3125,
+        0.625,
+        0.3515625,
+        0.6513671875
+      ],
+      "modifications": [
+        "Crop source pixel rectangle (2560, 5120, 2880, 5336) to remove grout and overlap edges",
+        "Make a repeating 2x2 mirrored extraction; flip normal R on horizontal mirror and G on vertical mirror",
+        "Retain OpenGL tangent normal convention and renormalize after resampling",
+        "JPEG quality 92, no chroma subsampling; source colour retained"
+      ],
+      "bytes": 54032,
+      "sha256": "dca756bc219d455487544e0ef69570eb8e5b7a66cca49e112b25b27e953fda1e"
+    },
+    {
+      "file": "materials/roof/roughness.jpg",
+      "title": "Roof Slates 03 — roughness",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/roof_slates_03",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/roof_slates_03/roof_slates_03_rough_8k.jpg",
+      "source_md5": "8eca70c3c5ce42063f3d57c6a1b25a6c",
+      "source_bytes": 786788,
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "roughness",
+      "dimensions": [
+        512,
+        256
+      ],
+      "recommended_repeat_m": [
+        0.234375,
+        0.158203
+      ],
+      "crop_uv": [
+        0.3125,
+        0.625,
+        0.3515625,
+        0.6513671875
+      ],
+      "modifications": [
+        "Crop source pixel rectangle (2560, 5120, 2880, 5336) to remove grout and overlap edges",
+        "Make a repeating 2x2 mirrored extraction; flip normal R on horizontal mirror and G on vertical mirror",
+        "Keep source roughness as one channel; JPEG quality 91"
+      ],
+      "bytes": 673,
+      "sha256": "6b157b2c2ebef780d479c6e2e1ce0b4ed85405b2424718e17e05751cc71ded80"
+    },
+    {
+      "file": "materials/cloth/color.jpg",
+      "title": "Cotton Jersey — color",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/cotton_jersey",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cotton_jersey/cotton_jersey_diff_1k.jpg",
+      "source_md5": "d2f4493fdd48634b50d40f810ce9deb7",
+      "source_bytes": 581360,
+      "authors": {
+        "colormass": "Photography",
+        "Rico Cilliers": "Processing"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "color",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recommended_repeat_m": [
+        0.264,
+        0.264
+      ],
+      "crop_uv": null,
+      "modifications": [
+        "JPEG quality 92, no chroma subsampling; source colour retained"
+      ],
+      "bytes": 203321,
+      "sha256": "68d93b2eea964dd5d731bb272573319b1b732feb41b756ae88b7321e22f3836b"
+    },
+    {
+      "file": "materials/cloth/normal.jpg",
+      "title": "Cotton Jersey — normal",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/cotton_jersey",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cotton_jersey/cotton_jersey_nor_gl_1k.jpg",
+      "source_md5": "2dcc9dda3b726477f607c808e52f1833",
+      "source_bytes": 678670,
+      "authors": {
+        "colormass": "Photography",
+        "Rico Cilliers": "Processing"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "normal",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recommended_repeat_m": [
+        0.264,
+        0.264
+      ],
+      "crop_uv": null,
+      "modifications": [
+        "Retain OpenGL tangent normal convention and renormalize after resampling",
+        "JPEG quality 92, no chroma subsampling; source colour retained"
+      ],
+      "bytes": 270710,
+      "sha256": "9b615e5fccd1252aa3506aaf3b01c1771f0d3982bb88084c949c8a7768c5dd05"
+    },
+    {
+      "file": "materials/cloth/roughness.jpg",
+      "title": "Cotton Jersey — roughness",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/cotton_jersey",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cotton_jersey/cotton_jersey_rough_1k.jpg",
+      "source_md5": "ac691d215d3aca34dcd6ea2d03937286",
+      "source_bytes": 865264,
+      "authors": {
+        "colormass": "Photography",
+        "Rico Cilliers": "Processing"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "roughness",
+      "dimensions": [
+        512,
+        512
+      ],
+      "recommended_repeat_m": [
+        0.264,
+        0.264
+      ],
+      "crop_uv": null,
+      "modifications": [
+        "Keep source roughness as one channel; JPEG quality 91"
+      ],
+      "bytes": 71359,
+      "sha256": "250dffdd858ee0fde9228c34d863b72f977c6d837923d4ef70a4abe9555def7f"
+    },
+    {
+      "file": "materials/ground/color.jpg",
+      "title": "Forest Leaves 02 — color",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/forest_leaves_02",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/forest_leaves_02/forest_leaves_02_diffuse_1k.jpg",
+      "source_md5": "13e9bfac07cb72ca143e153cc2f589a8",
+      "source_bytes": 437891,
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "color",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recommended_repeat_m": [
+        3,
+        3
+      ],
+      "crop_uv": null,
+      "modifications": [
+        "Restored unchanged from the previous Sansa CC0 asset archive",
+        "Original processing: JPEG quality 92 RGB without chroma subsampling; roughness single-channel quality 91"
+      ],
+      "bytes": 580159,
+      "sha256": "2917478b165398fcf44826a4ba7afb8f1a709004773eaa4cbf884d1064ed80c3"
+    },
+    {
+      "file": "materials/ground/normal.jpg",
+      "title": "Forest Leaves 02 — normal",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/forest_leaves_02",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/forest_leaves_02/forest_leaves_02_nor_gl_1k.jpg",
+      "source_md5": "72002432222467c74cd9980cbddb25a4",
+      "source_bytes": 577163,
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "normal",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recommended_repeat_m": [
+        3,
+        3
+      ],
+      "crop_uv": null,
+      "modifications": [
+        "Restored unchanged from the previous Sansa CC0 asset archive",
+        "Original processing: JPEG quality 92 RGB without chroma subsampling; roughness single-channel quality 91"
+      ],
+      "bytes": 850814,
+      "sha256": "be1d53726eb3ac2e3fc1ba92aeef93d70bab5d25f2caee6909fd2334535a79e4"
+    },
+    {
+      "file": "materials/ground/roughness.jpg",
+      "title": "Forest Leaves 02 — roughness",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/forest_leaves_02",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/forest_leaves_02/forest_leaves_02_rough_1k.jpg",
+      "source_md5": "578e637510d8fdd7acf97afc6f329e9d",
+      "source_bytes": 192523,
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "roughness",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recommended_repeat_m": [
+        3,
+        3
+      ],
+      "crop_uv": null,
+      "modifications": [
+        "Restored unchanged from the previous Sansa CC0 asset archive",
+        "Original processing: JPEG quality 92 RGB without chroma subsampling; roughness single-channel quality 91"
+      ],
+      "bytes": 220289,
+      "sha256": "09cc07f6c822030969512f2e5cb8299203a064b43d761d7cedf02b9d4a9e6e59"
+    },
+    {
+      "file": "materials/rock/color.jpg",
+      "title": "Mossy Rock — color",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/mossy_rock",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_rock/mossy_rock_diff_1k.jpg",
+      "source_md5": "a57fbbf55269eb64f8d40708fe3af26c",
+      "source_bytes": 1124438,
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "color",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recommended_repeat_m": [
+        3,
+        3
+      ],
+      "crop_uv": null,
+      "modifications": [
+        "Restored unchanged from the previous Sansa CC0 asset archive",
+        "Original processing: JPEG quality 92 RGB without chroma subsampling; roughness single-channel quality 91"
+      ],
+      "bytes": 618576,
+      "sha256": "bb99dcaeee3ca50309ff95b11b0e6c2af27d23f90d30a72bda04106407e8000d"
+    },
+    {
+      "file": "materials/rock/normal.jpg",
+      "title": "Mossy Rock — normal",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/mossy_rock",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_rock/mossy_rock_nor_gl_1k.jpg",
+      "source_md5": "59370f9b3d068271c2bccfb414dc325b",
+      "source_bytes": 995727,
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "normal",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recommended_repeat_m": [
+        3,
+        3
+      ],
+      "crop_uv": null,
+      "modifications": [
+        "Restored unchanged from the previous Sansa CC0 asset archive",
+        "Original processing: JPEG quality 92 RGB without chroma subsampling; roughness single-channel quality 91"
+      ],
+      "bytes": 513703,
+      "sha256": "45ad53aefcf52f5f49d0d1881fe392eaeebeda136ec20f9f2b0f6fd2a293c032"
+    },
+    {
+      "file": "materials/rock/roughness.jpg",
+      "title": "Mossy Rock — roughness",
+      "provider": "Poly Haven",
+      "source": "https://polyhaven.com/a/mossy_rock",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_rock/mossy_rock_rough_1k.jpg",
+      "source_md5": "7eadb38815ad2569104d827ad8ac1572",
+      "source_bytes": 780918,
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "map": "roughness",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recommended_repeat_m": [
+        3,
+        3
+      ],
+      "crop_uv": null,
+      "modifications": [
+        "Restored unchanged from the previous Sansa CC0 asset archive",
+        "Original processing: JPEG quality 92 RGB without chroma subsampling; roughness single-channel quality 91"
+      ],
+      "bytes": 379155,
+      "sha256": "fdc6e8262e08ac176e94bca1db126e73178c5304041209a91ea0b1cb6994cec0"
+    },
+    {
+      "file": "models/avalokitesvara.glb",
+      "title": "관세음보살 · 고려 협시보살 스캔의 현대적 해석",
+      "collection": "국립중앙박물관 덕수2116, 금동불좌상·금동보살입상",
+      "source": "https://www.museum.go.kr/MUSEUM/contents/M0505000000.do?relicId=1116&schM=view&searchId=search",
+      "license": "공공누리 제1유형: 출처표시",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "attribution": "국립중앙박물관, 금동불좌상·금동보살입상(덕수2116), 공공누리 제1유형. 협시보살 3D 스캔을 바탕으로 좌우 동세·보관의 화불과 정병을 구성하고 웹용 크기·텍스처·압축을 조정했습니다. 관세음·대세지보살 표현은 산사의 현대적 해석이며 문화재 원형 복원이나 박물관의 존명 판정이 아닙니다.",
+      "description": "두 파생상은 동일한 고려 협시 스캔을 공유하는 한 쌍의 디자인입니다. 별개의 관음·대세지 실물 문화재 스캔으로 표시하지 않습니다.",
+      "modifications": [
+        "협시 스캔 본체의 원래 58,026삼각형과 UV·얼굴·옷주름 보존",
+        "관세음상 본체의 좌우 반전으로 두 협시의 동세를 본존 쪽으로 구성",
+        "관음 보관에 기존 아미타 스캔을 작게 축소·단순화한 화불 추가",
+        "대세지 보관에 금동 정병 표지를 새로 조형",
+        "원본8K 색상·노멀을2K JPEG로 변환, 금동PBR(.55/.47) 및Meshopt 압축"
+      ],
+      "bytes": 1563460,
+      "sha256": "2a6e930eaf82eec98e5889cdf44c577d45c86212b2578a1181eefd766fe4d626"
+    },
+    {
+      "file": "models/mahastamaprapta.glb",
+      "title": "대세지보살 · 고려 협시보살 스캔의 현대적 해석",
+      "collection": "국립중앙박물관 덕수2116, 금동불좌상·금동보살입상",
+      "source": "https://www.museum.go.kr/MUSEUM/contents/M0505000000.do?relicId=1116&schM=view&searchId=search",
+      "license": "공공누리 제1유형: 출처표시",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "attribution": "국립중앙박물관, 금동불좌상·금동보살입상(덕수2116), 공공누리 제1유형. 협시보살 3D 스캔을 바탕으로 좌우 동세·보관의 화불과 정병을 구성하고 웹용 크기·텍스처·압축을 조정했습니다. 관세음·대세지보살 표현은 산사의 현대적 해석이며 문화재 원형 복원이나 박물관의 존명 판정이 아닙니다.",
+      "description": "두 파생상은 동일한 고려 협시 스캔을 공유하는 한 쌍의 디자인입니다. 별개의 관음·대세지 실물 문화재 스캔으로 표시하지 않습니다.",
+      "modifications": [
+        "협시 스캔 본체의 원래 58,026삼각형과 UV·얼굴·옷주름 보존",
+        "관세음상 본체의 좌우 반전으로 두 협시의 동세를 본존 쪽으로 구성",
+        "관음 보관에 기존 아미타 스캔을 작게 축소·단순화한 화불 추가",
+        "대세지 보관에 금동 정병 표지를 새로 조형",
+        "원본8K 색상·노멀을2K JPEG로 변환, 금동PBR(.55/.47) 및Meshopt 압축"
+      ],
+      "bytes": 1551756,
+      "sha256": "15c16816222742ddd4a3cf84eb9c7bc8c048fb8e559347dded4f0f4a773cbfae"
+    },
+    {
+      "file": "altar-amitabha-triad-20261102.jpg",
+      "title": "산사 아미타삼존 후불화",
+      "source": "OpenAI imagegen edit of user-provided AI artwork",
+      "license": "Generated for use in this project; not a museum image license",
+      "description": "Contemporary 2:1 horizontal temple painting. Historically informed interpretation, not a restoration or an authenticated museum painting.",
+      "reference_sources": [
+        {
+          "title": "The Met, Amitabha triad, Goryeo ca.13th century (30.76.298)",
+          "url": "https://www.metmuseum.org/art/collection/search/39882"
+        },
+        {
+          "title": "Asian Art Museum, Goryeo Dynasty educator workshop, 2003, file page25",
+          "url": "https://education.asianart.org/wp-content/uploads/sites/6/2019/12/GoryeoDynasty.pdf"
+        },
+        {
+          "title": "National Institute of Korean History, Goryeo Buddhist painting",
+          "url": "https://contents.history.go.kr/mobile/tt/view.do?levelId=tt_b15"
+        }
+      ],
+      "modifications": [
+        "Completed central Amitabha seated figure and lotus throne.",
+        "Added clear Gwaneum crown Buddha and Dae Seji crown vessel markers.",
+        "Recomposed main Buddha higher and larger than the attendants.",
+        "Refined silk-like gold floral roundels, veils, drapery and cloud/lotus ornament.",
+        "Raised the central painted figure to separate its face from the foreground sculpture.",
+        "Encoded to a web JPEG at the generated native 2:1 size."
+      ],
+      "bytes": 1308686,
+      "sha256": "3e8d71b51b43063ad600a67e6c704ca55c59b5fcdb3dd2da4b7b1f9ec41ceb83"
+    },
+    {
+      "file": "altar-wall-amitabha-20261102.jpg",
+      "title": "산사 고요한 아미타삼존 벽화",
+      "source": "OpenAI built-in imagegen edit of project original AI mural",
+      "license": "Generated for use in this project; not a museum image license",
+      "description": "Historically informed contemporary creative work; not an authenticated museum painting or exact restoration",
+      "reference_sources": [
+        {
+          "title": "The Met, Goryeo Amitabha Triad",
+          "url": "https://www.metmuseum.org/art/collection/search/39882"
+        },
+        {
+          "title": "Asian Art Museum Goryeo workshop",
+          "url": "https://education.asianart.org/wp-content/uploads/sites/6/2019/12/GoryeoDynasty.pdf"
+        },
+        {
+          "title": "국사편찬위원회 고려불화",
+          "url": "https://contents.history.go.kr/mobile/tt/view.do?levelId=tt_b15"
+        }
+      ],
+      "modifications": [
+        "Extended the original panorama laterally to a full back-wall aspect near2.54:1 without stretching the deities",
+        "Muted mineral ochre, umber and celadon, continuous plaster-like painted edges without frame",
+        "Raised the painted principal figures above the foreground statues and calmed the lower wall field",
+        "Scaled the central painted Amitabha complex smaller and higher to separate its face from the foreground three-dimensional Buddha"
+      ],
+      "width": 1997,
+      "height": 788,
+      "bytes": 983396,
+      "sha256": "28fa96e5f42a52541aa8b61d5b72d69440c88f0d567922c5e4fb9aa54170537a"
+    },
+    {
+      "file": "altar-wall-calm-20261102.jpg",
+      "title": "산사 고요한 아미타삼존 벽화",
+      "source": "OpenAI built-in imagegen edit of the current Amitabha triad mural, with the original project mural as a tonal reference",
+      "license": "Generated for use in this project; not a museum image license",
+      "description": "Historically informed contemporary devotional painting. Existing Amitabha triad composition and iconographic markers retained with quieter aged mineral pigments so the three-dimensional gold statues remain the visual focus. Not an authenticated historic painting or exact restoration.",
+      "modifications": [
+        "Preserved the painted Amitabha, viewer-left Mahasthamaprapta crown vessel, viewer-right Avalokiteshvara crown Buddha, lotus thrones, halos, robe patterns and celestial attendants.",
+        "Reduced the bright orange-gold cloud field into layered umber, charcoal-jade and restrained antique ochre.",
+        "Softened small ornament contrast and kept dark lower-middle passages behind the foreground sculptures.",
+        "Maintained the original panoramic composition and full wall coverage.",
+        "Native generated dimensions; JPEG96/4:4:4 encoding only, no resizing, cropping or deterministic pixel retouching."
+      ],
+      "width": 1997,
+      "height": 787,
+      "bytes": 1026536,
+      "sha256": "074017b9f22d14f3cc9abb2fb27884d1cea07d7686a4d3ebdbe1f3843e5c9bfd"
+    },
+    {
+      "file": "cafe25-v2/official-cafe25-cup-photo.png",
+      "source": "https://www.gsretail.com/brand/gs25",
+      "description": "Historical logo reference only. The scene no longer samples this photograph; cup printing uses authored vector artwork and the main building sign uses solid extruded letter geometry.",
+      "license": "Brand reference for isolated local collaboration prototype",
+      "bytes": 850244,
+      "sha256": "c5df115d04e87288995e3b8eaec09df4a7695e62963ff17fd561d2774bb79afa"
+    },
+    {
+      "file": "cafe25-v2/official-gs25-logo-white.png",
+      "source": "https://www.gsretail.com/brand/gs25",
+      "description": "Original GS25 wordmark embedded in official GS Retail website.",
+      "license": "Brand reference for isolated local collaboration prototype",
+      "bytes": 3469,
+      "sha256": "80653400042d0cd172949094323142cc2cc715911521a3fa18abb7a0b532dd45"
+    },
+    {
+      "file": "cafe25-v2/menu-drinks.png",
+      "source": "OpenAI built-in image_gen",
+      "description": "AI-generated unbranded americano and iced latte menu cutouts. Not official GS product photographs. Full prompts and provenance in cafe25-v2/provenance.json.",
+      "license": "Project-generated asset",
+      "bytes": 1328771,
+      "sha256": "ef17fc05f0bebe45dbe4b8fb21bc5750d6bd7489aa4d950bcf767c23bcea2c7f"
+    },
+    {
+      "file": "cafe25-v3/cafe25-wordmark-blue.svg",
+      "source": "User-directed hand-authored vector paths",
+      "description": "Flat, straight-baseline cup printing artwork in GS25 blue #007cff. The building sign uses actual extruded construction outlines rather than this image. No bitmap, photo sampling or font dependency. This is project-authored reconstruction rather than official master artwork.",
+      "license": "Project-authored brand reconstruction",
+      "bytes": 1557,
+      "sha256": "b9644df21f7980b9a833c3a98cf34dfe62a6f6ba9466d9e40f4c454d5ef9d294"
+    },
+    {
+      "file": "cafe25-v5/gongyang-cat.glb",
+      "source": "https://sketchfab.com/3d-models/bicolor-cat-e623a618ca344a8393d7ba4d63ec23cf",
+      "author": "guillaume bolis (original model/texture); kenchoo (rebuild/animation)",
+      "description": "Realistically proportioned bicolor cat. Sansa adds skinned CAFE25 waistcoat, procedural foot placement, patrol and material adjustment at runtime. Attribution and original source links in cafe25-v5/ATTRIBUTION.txt.",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "bytes": 2297972,
+      "sha256": "4b395ba943d647f4c490c982a70fa2175ef91569615773da7ef3429e427ed21a"
+    },
+    {
+      "file": "cafe25-v9/americano-hot.webp",
+      "source": "OpenAI built-in image_gen",
+      "license": "Project-generated asset",
+      "description": "Calm tactile coffee cutout referencing Sansa moktak/prayer-bead materials and soft volumetric light. Not official GS product photography.",
+      "bytes": 117132,
+      "sha256": "96e875e40d255227f569b978bcce6c1d0048e7bf5c11a9a0aad8688ce42f35b5",
+      "modifications": [
+        "Transparent native1254x1254 artwork encoded to WebP; original alpha preserved."
+      ]
+    },
+    {
+      "file": "cafe25-v9/americano-iced.webp",
+      "source": "OpenAI built-in image_gen",
+      "license": "Project-generated asset",
+      "description": "Calm tactile coffee cutout referencing Sansa moktak/prayer-bead materials and soft volumetric light. Not official GS product photography.",
+      "bytes": 173302,
+      "sha256": "6025f72f1d3f6a0ca5f86d792b924f38a48a15296a211a4b8b31288af37414da",
+      "modifications": [
+        "Transparent native1254x1254 artwork encoded to WebP; original alpha preserved."
+      ]
+    },
+    {
+      "file": "cafe25-v9/latte-hot.webp",
+      "source": "OpenAI built-in image_gen",
+      "license": "Project-generated asset",
+      "description": "Calm tactile coffee cutout referencing Sansa moktak/prayer-bead materials and soft volumetric light. Not official GS product photography.",
+      "bytes": 144750,
+      "sha256": "aa992f656b3d2fa96e6843ae774600ca92fe9d5f86df8b0f339c439e90a69b70",
+      "modifications": [
+        "Transparent native1254x1254 artwork encoded to WebP; original alpha preserved."
+      ]
+    },
+    {
+      "file": "cafe25-v9/latte-iced.webp",
+      "source": "OpenAI built-in image_gen",
+      "license": "Project-generated asset",
+      "description": "Calm tactile coffee cutout referencing Sansa moktak/prayer-bead materials and soft volumetric light. Not official GS product photography.",
+      "bytes": 144134,
+      "sha256": "535cf7aad62af9eeeaeb5bd0c10d86341299469773fc85b907003f061dee9a5b",
+      "modifications": [
+        "Transparent native1254x1254 artwork encoded to WebP; original alpha preserved."
+      ]
+    },
+    {
+      "file": "cafe25-v10/gongyang-delivery.webp",
+      "source": "OpenAI built-in image_gen",
+      "license": "Project-generated asset",
+      "description": "Gongyang, the existing orange-and-white Sansa cafe cat in a blue waistcoat, gently extending a paw to deliver a coffee and personal note.",
+      "bytes": 188348,
+      "sha256": "591c47efffc40a9af0d5b0afa04484034f2dce36d74a3c1d70de45cc5b6e736a",
+      "modifications": [
+        "Generated 1312×1199 RGBA asset resized to 1100px width and encoded to WebP; alpha retained, no image retouching."
+      ]
+    },
+    {
+      "file": "cafe25-v11/americano-hot.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 165552,
+      "sha256": "b35bbe3b55cb10b45f401337586bab4ad4f33de8f7e69a5aa38485289771f908",
+      "source": "OpenAI built-in image_gen",
+      "license": "Project-generated asset",
+      "description": "Kkodong and Gongyang offering CAFE25 together on Sansa temple veranda; GS25 vest, CAFE25 cup; selected americano hot",
+      "modifications": [
+        "Full generated square scene encoded to WebP at original1254px; no pixel retouching, cropping or compositing."
+      ]
+    },
+    {
+      "file": "cafe25-v11/americano-iced.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 176102,
+      "sha256": "696d3b6023c639e87a1c410f97f4843c2dd118a30be8be9737e2d8ee4db62f84",
+      "source": "OpenAI built-in image_gen",
+      "license": "Project-generated asset",
+      "description": "Kkodong and Gongyang offering CAFE25 together on Sansa temple veranda; GS25 vest, CAFE25 cup; selected americano iced",
+      "modifications": [
+        "Full generated square scene encoded to WebP at original1254px; no pixel retouching, cropping or compositing."
+      ]
+    },
+    {
+      "file": "cafe25-v11/latte-hot.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 173512,
+      "sha256": "949b6fb0b69220b15b421266162a9d5845ab604c83fd0bec023ac1f16fc4687c",
+      "source": "OpenAI built-in image_gen",
+      "license": "Project-generated asset",
+      "description": "Kkodong and Gongyang offering CAFE25 together on Sansa temple veranda; GS25 vest, CAFE25 cup; selected latte hot",
+      "modifications": [
+        "Full generated square scene encoded to WebP at original1254px; no pixel retouching, cropping or compositing."
+      ]
+    },
+    {
+      "file": "cafe25-v11/latte-iced.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 187290,
+      "sha256": "60acee1cdd73da646fe17d0745e071e90401969afe65bb520b416153baaa4d73",
+      "source": "OpenAI built-in image_gen",
+      "license": "Project-generated asset",
+      "description": "Kkodong and Gongyang offering CAFE25 together on Sansa temple veranda; GS25 vest, CAFE25 cup; selected latte iced",
+      "modifications": [
+        "Full generated square scene encoded to WebP at original1254px; no pixel retouching, cropping or compositing."
+      ]
+    },
+    {
+      "file": "cafe25-park/shrub-leaves-photo-20261104.webp",
+      "source": "OpenAI built-in image generation; full prompt in work/cafe25-lakeside-park-20261104/shrub-texture-prompt.txt",
+      "description": "Project-generated photographic-style autumn shrub albedo for static three-dimensional park planting. Not a photograph of Seokchon Lake.",
+      "license": "Project-generated asset",
+      "bytes": 116414,
+      "sha256": "8f37d663b6ba54723d7ce50a610d0f068bd5b0a05cad404067ad67147b7ccda4",
+      "modifications": [
+        "512×512 WebP encoding for mobile texture delivery; original image preserved in work/cafe25-lakeside-park-20261104/shrub-leaves-generated-original.png"
+      ]
+    }
+  ],
+  "font": {
+    "name": "Sansa Quiet UI",
+    "author": "Kil Hyung-jin",
+    "source": "https://github.com/orioncactus/pretendard",
+    "license": "SIL Open Font License 1.1",
+    "license_file": "/fonts/SansaQuietUI-OFL.txt",
+    "derived_from": "Pretendard Variable",
+    "modifications_file": "/fonts/SansaQuietUI-MODIFICATIONS.txt",
+    "modifications": [
+      "Subset into current UI core and a disjoint remainder using unicode-range",
+      "Retain the original outlines, hints, advances and wght 45–930 axis",
+      "Rename primary and fvar instance PostScript names; preserve original copyright and license metadata"
+    ],
+    "files": [
+      {
+        "file": "/fonts/SansaQuietUI-Core.woff2",
+        "bytes": 133764,
+        "sha256": "4441c5d5ed84bcc80b6372f217d82fdf88115b9bf3abe9795a4b447ecc1ec164"
+      },
+      {
+        "file": "/fonts/SansaQuietUI-Remainder.woff2",
+        "bytes": 2003124,
+        "sha256": "59a3a613fb7de3a2eb93bd55281535ef3556a798c46c3ba1681b9981f09b0095"
+      }
+    ]
+  },
+  "audio": "Original Web Audio synthesis: breeze, birds, wooden beads, moktak and bell; no rainfall layer.",
+  "reference": "Large bead gesture informed by the public App Store preview of Seokgamoney. No artwork or assets copied.",
+  "environment": {
+    "source": "src/scene/sanctuary.ts",
+    "description": "Original procedural Korean timber hall and garden composition. Architectural proportions, construction rhythm, altar and lighting are adapted for the interactive web space.",
+    "license": "Project-authored",
+    "references": [
+      {
+        "title": "국립중앙박물관 사유의 방 / A Room of Quiet Contemplation",
+        "url": "https://www.museum.go.kr/sayu",
+        "role": "Contemplative display, focus and restraint; no exhibition images or media copied"
+      },
+      {
+        "title": "용주사 대웅보전",
+        "url": "https://yongjoosa.org/pages/s1_4_1.php",
+        "role": "Korean timber hall, framing, altar placement and restrained architectural rhythm"
+      },
+      {
+        "title": "국사편찬위원회 — 부석사 무량수전",
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_20&levelId=kc_r200327",
+        "role": "Entasis column proportions and Korean timber architecture reference"
+      }
+    ],
+    "dimensions_m": {
+      "floor_width": 36,
+      "floor_depth": 46,
+      "roof_ridge_height": 18
+    },
+    "scale_revision": "Hall width and depth doubled, height multiplied by 1.5. The approved altar composition grows uniformly by 1.5; character and cushion dimensions retained.",
+    "materials": {
+      "source": "src/scene/surfaces.ts",
+      "asset_manifest": "tools/surfaces/manifest.json",
+      "provider": "Poly Haven",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "maps": [
+        "sRGB colour",
+        "OpenGL tangent-space normal",
+        "linear roughness"
+      ],
+      "mapping": "UVs are projected in world metres; wood grain follows the structural member. Texture repeats remain one, with per-surface physical sample dimensions.",
+      "runtime_adjustments": "Source texture bytes are documented individually. The renderer applies per-material tint, bounded luminance contrast and chroma adjustments, normal intensity and roughness limits; these adjustments do not rewrite the source image files.",
+      "surface_roles": {
+        "floor": "materials/wood (Dark Wood; shared with timber with separate surface response)",
+        "timber": "materials/wood (Dark Wood)",
+        "plaster": "materials/plaster (White Plaster 02)",
+        "stone and gravel": "materials/stone (Granite Tile 04)",
+        "roof": "materials/roof (Roof Slates 03)",
+        "cloth and lantern paper": "materials/cloth (Cotton Jersey)",
+        "garden ground and moss": "materials/ground (Forest Leaves 02)",
+        "garden rock": "materials/rock (Mossy Rock)"
+      },
+      "sample_dimensions_m": {
+        "wood": [
+          2,
+          2
+        ],
+        "plaster": [
+          1,
+          1
+        ],
+        "stone": [
+          0.68,
+          0.68
+        ],
+        "roof": [
+          0.234375,
+          0.158203
+        ],
+        "cloth": [
+          0.264,
+          0.264
+        ],
+        "ground": [
+          3,
+          3
+        ],
+        "rock": [
+          3,
+          3
+        ]
+      },
+      "retained_unloaded_assets": "The prior materials/floor Old Wooden Floor 02 maps remain credited with their original hashes, but the current hall floor shares the Dark Wood maps; those earlier floor maps are not loaded."
+    }
+  },
+  "audio_recordings": [
+    {
+      "title": "사찰 염불 · 검토용",
+      "file": "/audio/temple-chant-review-v1.mp3",
+      "author": "김용배",
+      "provider": "한국저작권위원회 공유마당",
+      "source": "https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?menuNo=200020&wrtSn=13254274",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_file": "/audio/temple-chant-review-v1.license.txt",
+      "modifications": [
+        "원본 WAV 전구간 유지",
+        "mono downmix",
+        "2-pass loudnorm 음량 정규화",
+        "MP3 112kbps 48kHz 인코딩",
+        "원본 부가메타데이터 제거"
+      ],
+      "duration_seconds": 119.36925,
+      "bytes": 1671980,
+      "sha256": "7863dc8904f6f962389ae43301d974df07c91f9b5800d0f33d074631c645a9dc",
+      "complete_heart_sutra_verified": false,
+      "status": "User-selected local review recording; not a verified complete Heart Sutra."
+    }
+  ]
+}
