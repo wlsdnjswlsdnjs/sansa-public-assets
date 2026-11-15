@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "name": "Sansa compiled web modules",
+  "snapshot": "20261115-legacy-v12",
+  "fileCount": 9,
+  "totalBytes": 1766554,
+  "files": [
+    {
+      "path": "assets/game-D6gULUeM.js",
+      "bytes": 930714,
+      "sha256": "25c11dcad30d82ce85032fe8eda92ab7bffecc0b70e61320b9d42f42e402e572",
+      "integrity": "sha384-xDvjSF4IPRuYXnRnDpIPe6G+sGytPKqsXPtGcD7GVYENnW5FFn4aSu097WcLeM7l",
+      "contentType": "text/javascript"
+    },
+    {
+      "path": "assets/index-Cf05uuSY.js",
+      "bytes": 2485,
+      "sha256": "27b6d5f1e984ca06d671461a30dc3e66c68697a1b90078ac86cb392ac2fd8a66",
+      "integrity": "sha384-91lO6dGwdodzqM4PJvig4i5woRCbbN5Gn/CrOB+H/N3YXzF3RhSdenOdrbKQYek1",
+      "contentType": "text/javascript"
+    },
+    {
+      "path": "assets/map-content-client-D_k9QCvn.js",
+      "bytes": 676405,
+      "sha256": "49f105dfa3b2df8d0075bb119ecf72d7b9ca2d4ab4c56719ad480bd4955c8748",
+      "integrity": "sha384-z9e+2WRuABcsvPOi4ggeEpZgFWChMVxUmVIpJMM3PXa6UTBLpKcgabKJf7nN2keM",
+      "contentType": "text/javascript"
+    },
+    {
+      "path": "assets/presence-worker-ycHP17Bk.js",
+      "bytes": 84754,
+      "sha256": "d0dcdac3e26d275c58547e3dfa594684ef9137b90b495af47aa7c5434ece267f",
+      "integrity": "sha384-T4ELOR+8AZ5T7/bk+wBmiSzByMQDzJo6cHlyi6k+uIEeqvIAJHRSCKzj8zV3Lbdk",
+      "contentType": "text/javascript"
+    },
+    {
+      "path": "assets/qrcode-5IewWFXk.js",
+      "bytes": 21140,
+      "sha256": "2970b32cca017d3a139d8d57ce77710f95c68a448624447be30ef9ffe2664099",
+      "integrity": "sha384-rlumDm87KfYrzgdNSUYaqwmc/iEuJSwmYdv255f2tRY/SRjaPrBZeJipn4G7Mf20",
+      "contentType": "text/javascript"
+    },
+    {
+      "path": "assets/safari-scene-bleed-BChFMqZ0.js",
+      "bytes": 2236,
+      "sha256": "2577ba9e79aaf8d6b335f7c1dedc4d1b883848369f14b79e7e155fc8876177bc",
+      "integrity": "sha384-0WbGRldCxfLfQNaskiN9kXKvgPKfzO4ohkgxJWkCuamn1YbBAguyLgNBH/tt+jNt",
+      "contentType": "text/javascript"
+    },
+    {
+      "path": "assets/sha2-BqLbjB6e.js",
+      "bytes": 11322,
+      "sha256": "bedbb48bf385b9348c4f64059d0b5edd8049dcff099376118e81063b258956a3",
+      "integrity": "sha384-aMes3FPxp1uhqYqpDKlcgFSVkoNV11YjsMp0RzkjBgyWxnPiDjHbjGpsehrCD5eW",
+      "contentType": "text/javascript"
+    },
+    {
+      "path": "assets/village-route-worker-DdC9ROa-.js",
+      "bytes": 35302,
+      "sha256": "437aeec8eef5d2fff028de98d8c14ea8c64af864dd013449c679135841f5233a",
+      "integrity": "sha384-vZhfoKVR1UO2yIbtulfo+xDpkSdbMMTdnSlZ21BqikMzQwpn5Zg0B7x6pZ29hCXC",
+      "contentType": "text/javascript"
+    },
+    {
+      "path": "assets/visible-viewport-B0ZlO9sH.js",
+      "bytes": 2196,
+      "sha256": "1dc0b56052cf2e8983a0abe4a85c2eb7dbe83e2233f1e6d14485d38aeb6752cb",
+      "integrity": "sha384-TNmxTJAg2jRjXHy02r/PwxvV4scVhw08HxF9d5SVJQ8yy9u+Vo9lSJNpoDIPlDOg",
+      "contentType": "text/javascript"
+    }
+  ],
+  "filesSha256": "77cfa4a28f8be0931812f40f80e745069578cfb807b67837ab5a2784b7f7379b",
+  "filesHashAlgorithm": "sha256(UTF8(JSON.stringify(files)+LF))",
+  "entry": "assets/index-Cf05uuSY.js",
+  "allGeneratedJsIncluded": true,
+  "delivery": {
+    "esmImportsRelative": true,
+    "workerEntryUrls": [
+      "https://sansatemple.com/assets/presence-worker-ycHP17Bk.js",
+      "https://sansatemple.com/assets/village-route-worker-DdC9ROa-.js"
+    ],
+    "stylesheetOrigin": "https://sansatemple.com",
+    "stylesheetPath": "assets/game-DBJxLU8d.css",
+    "fontUrls": [
+      "https://sansatemple.com/fonts/SansaQuietUI-Remainder.woff2?v=56a14a34e80f",
+      "https://sansatemple.com/fonts/SansaQuietUI-Core.woff2?v=8cec618861e8"
+    ],
+    "javaScriptRuntimePreloadDependencies": 0,
+    "stylesheetRuntimePreloadDependencies": [
+      "assets/game-DBJxLU8d.css"
+    ]
+  },
+  "rights": "Existing authorship, licenses and attribution requirements remain applicable; no additional license is granted."
+}
