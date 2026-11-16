@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "kind": "compiled-browser-modules",
+  "release": "20261116-neutral-building-labels",
+  "workerScriptsStylesAndFonts": "Official sansatemple.com origin",
+  "credits": "../../CREDITS.json",
+  "containsOriginalSourceHistory": false,
+  "containsParticipantRecords": false,
+  "files": [
+    {
+      "path": "assets/game-C9xlq2so.js",
+      "bytes": 1797711,
+      "sha256": "8aac6343ad293523553cdd57e9d1e0807987f8c3654d6b49ec9f55dde71a0a3c",
+      "integrity": "sha384-puwXKl7FePPW3Qihnb8/Y6tQUQacYQwxrIsaPox9scPY1HVlcOz46eHn1a1stz5S"
+    },
+    {
+      "path": "assets/index-DtauOJ4J.js",
+      "bytes": 2557,
+      "sha256": "9663796ea20f2925b852c05900f0e6fadb81dd13eb304d9129d279a668cf6e87",
+      "integrity": "sha384-2PmP+VbVnKQ+wglJR4QgJoYW3SQwmKa5SvtsdmChonfdOcP+64J0jqgmhK+6gSib"
+    },
+    {
+      "path": "assets/presence-DttmXrQ4.js",
+      "bytes": 113182,
+      "sha256": "60cf22d7579a8a44c1b66e65224164c0c114ee7a20c0c56724f98ba1ed19171e",
+      "integrity": "sha384-sw6eBs3WR5S+oFO5jFQYDCYtLqCl63lto0pUdyYXRQSCgvOF6a9LVV3+guybJ3DZ"
+    },
+    {
+      "path": "assets/presence-worker-D4zCFibK.js",
+      "bytes": 50336,
+      "sha256": "9045f207a068600e5881d231a7e0b45e55d83c4693270061dbfb063167faabb3",
+      "integrity": "sha384-cA4p8NqsCctya/tRBFWaXTpkwd6B0lVvgddT8po+j0HxysPyVOtnTwT+2BRH/Lki"
+    },
+    {
+      "path": "assets/qrcode-5IewWFXk.js",
+      "bytes": 21140,
+      "sha256": "2970b32cca017d3a139d8d57ce77710f95c68a448624447be30ef9ffe2664099",
+      "integrity": "sha384-rlumDm87KfYrzgdNSUYaqwmc/iEuJSwmYdv255f2tRY/SRjaPrBZeJipn4G7Mf20"
+    },
+    {
+      "path": "assets/safari-scene-bleed-BChFMqZ0.js",
+      "bytes": 2236,
+      "sha256": "2577ba9e79aaf8d6b335f7c1dedc4d1b883848369f14b79e7e155fc8876177bc",
+      "integrity": "sha384-0WbGRldCxfLfQNaskiN9kXKvgPKfzO4ohkgxJWkCuamn1YbBAguyLgNBH/tt+jNt"
+    },
+    {
+      "path": "assets/village-route-search-BUdxcn2B.js",
+      "bytes": 58487,
+      "sha256": "37fb5dc4d9bdf07d406e62d7a6980f90081685257f0d37a8a79a89efdc8350d4",
+      "integrity": "sha384-K+qPQlsJiFrJr9JXUkuiVSrn2hhOq9Syp7+nwH7TjNIECBAEK5KC9mpDotxsyhHe"
+    },
+    {
+      "path": "assets/village-route-worker-CccmYsCv.js",
+      "bytes": 46520,
+      "sha256": "3f2dc08f88a9d4d2d29b80f20f432b3b30c4eb88d2ee65ba4cee5b7b458cb500",
+      "integrity": "sha384-qms1Hm4a5xTrFf6tFe3PNIcy0jC2jo6IaSWqWHUGF4YdMfHbvlYSZ+5FA8/JpGhi"
+    },
+    {
+      "path": "assets/visible-viewport-B0ZlO9sH.js",
+      "bytes": 2196,
+      "sha256": "1dc0b56052cf2e8983a0abe4a85c2eb7dbe83e2233f1e6d14485d38aeb6752cb",
+      "integrity": "sha384-TNmxTJAg2jRjXHy02r/PwxvV4scVhw08HxF9d5SVJQ8yy9u+Vo9lSJNpoDIPlDOg"
+    },
+    {
+      "path": "assets/world-map-client-CBHlHvyw.js",
+      "bytes": 68114,
+      "sha256": "21bca93045fe579231c12ac183c9a692faad507129ac0a702389ec2b408ba998",
+      "integrity": "sha384-89Zi7G6OeMXcX/PIg45jfDVoinYxY+DJxEpQMHTCnajMPco2kKyTFnD4mpivxRF7"
+    }
+  ]
+}
