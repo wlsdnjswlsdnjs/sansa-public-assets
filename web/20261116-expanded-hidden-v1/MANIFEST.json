@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "kind": "compiled-browser-modules",
+  "release": "20261116-expanded-hidden-v1",
+  "files": [
+    {
+      "path": "assets/game-B94bwKAR.js",
+      "bytes": 1789961,
+      "sha256": "15cb3d93b0eeefd509fc8d4609b22b9c8af3db9f46d26867befff34a64aa78b2",
+      "integrity": "sha384-j7x3OC8xs5RLCX1pdiLdNZ8vMJU3upNXy0KZf6C2nyK0R9AhmMIDzgf8AcZqqv/J"
+    },
+    {
+      "path": "assets/index-DUeHpFkJ.js",
+      "bytes": 2557,
+      "sha256": "f767e3a06eb94c545ba77263cb0bc506d8846d660ce7173bcaff75044cbfd5da",
+      "integrity": "sha384-2k8lOTGEF5TzQkWhjXNl7wg2aIZJq/oYS4LJ/M2O8w8CwBE6rIMsuINtfhzPKEMJ"
+    },
+    {
+      "path": "assets/presence-CC39QglL.js",
+      "bytes": 111415,
+      "sha256": "0074f0dba14c546c75cafca6cf64902c36fce63993bffcde16f78d1a9be557ad",
+      "integrity": "sha384-21h62H/X6DJHvIzR9wcs4eSB/18JdVZiq/r+CRA58mj+n60ipsm/d2iFR8koYvJa"
+    },
+    {
+      "path": "assets/presence-worker-Dbteunf6.js",
+      "bytes": 50246,
+      "sha256": "c0e2172eed55da11f876c350dfc4761aaf513bfbbaf24213502aceacc9bec21e",
+      "integrity": "sha384-6N+PXi5N6i275ap0k0jpYxYfImQrw6UlZoFb98cY9es2MREv4XUz6bUOf0Q9vVm/"
+    },
+    {
+      "path": "assets/qrcode-5IewWFXk.js",
+      "bytes": 21140,
+      "sha256": "2970b32cca017d3a139d8d57ce77710f95c68a448624447be30ef9ffe2664099",
+      "integrity": "sha384-rlumDm87KfYrzgdNSUYaqwmc/iEuJSwmYdv255f2tRY/SRjaPrBZeJipn4G7Mf20"
+    },
+    {
+      "path": "assets/safari-scene-bleed-BChFMqZ0.js",
+      "bytes": 2236,
+      "sha256": "2577ba9e79aaf8d6b335f7c1dedc4d1b883848369f14b79e7e155fc8876177bc",
+      "integrity": "sha384-0WbGRldCxfLfQNaskiN9kXKvgPKfzO4ohkgxJWkCuamn1YbBAguyLgNBH/tt+jNt"
+    },
+    {
+      "path": "assets/village-route-search-BUdxcn2B.js",
+      "bytes": 58487,
+      "sha256": "37fb5dc4d9bdf07d406e62d7a6980f90081685257f0d37a8a79a89efdc8350d4",
+      "integrity": "sha384-K+qPQlsJiFrJr9JXUkuiVSrn2hhOq9Syp7+nwH7TjNIECBAEK5KC9mpDotxsyhHe"
+    },
+    {
+      "path": "assets/village-route-worker-CccmYsCv.js",
+      "bytes": 46520,
+      "sha256": "3f2dc08f88a9d4d2d29b80f20f432b3b30c4eb88d2ee65ba4cee5b7b458cb500",
+      "integrity": "sha384-qms1Hm4a5xTrFf6tFe3PNIcy0jC2jo6IaSWqWHUGF4YdMfHbvlYSZ+5FA8/JpGhi"
+    },
+    {
+      "path": "assets/visible-viewport-B0ZlO9sH.js",
+      "bytes": 2196,
+      "sha256": "1dc0b56052cf2e8983a0abe4a85c2eb7dbe83e2233f1e6d14485d38aeb6752cb",
+      "integrity": "sha384-TNmxTJAg2jRjXHy02r/PwxvV4scVhw08HxF9d5SVJQ8yy9u+Vo9lSJNpoDIPlDOg"
+    },
+    {
+      "path": "assets/world-map-client-CBHlHvyw.js",
+      "bytes": 68114,
+      "sha256": "21bca93045fe579231c12ac183c9a692faad507129ac0a702389ec2b408ba998",
+      "integrity": "sha384-89Zi7G6OeMXcX/PIg45jfDVoinYxY+DJxEpQMHTCnajMPco2kKyTFnD4mpivxRF7"
+    }
+  ],
+  "workerScriptsStylesAndFonts": "Official sansatemple.com origin",
+  "credits": "../../CREDITS.json",
+  "containsOriginalSourceHistory": false,
+  "containsParticipantRecords": false
+}
